@@ -5,7 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Customizing Bootstrap</title>
+<!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  
   <link rel="stylesheet" href="css/custom.css">
+
 </head>
 <body class="bg-light">
   <header>
@@ -42,14 +46,20 @@
       <div class="container px-4 py-5">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
           <div class="col-lg-6">
-            <img src="images/hero-img.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" loading="lazy">
+
+            <!-- Zoom-in effect for hero image -->
+            <img src="images/hero-img.jpg" class="d-block mx-lg-auto img-fluid animate__animated animate__zoomIn" alt="Bootstrap Themes" loading="lazy">
           </div>
           <div class="col-lg-6">
-            <h1 class="mb-3">Responsive heading for hero section</h1>
+
+            <!-- Heading fades in From the top -->
+            <h1 class="mb-3 animate__animated animate__fadeInDown">Responsive heading for hero section</h1>
             <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacus dui, dapibus in odio vel, tincidunt efficitur lacus. Aliquam vitae sem sed quam faucibus tincidunt vel eget tellus. Ut pulvinar a ex a condimentum. Nam est quam, sollicitudin tempor congue eu, convallis at nisi. </p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
-              <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+
+              <!-- Primary buttons pulse animation -->
+              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 animate__animated animate__pulse">Primary</button>
+              <button type="button" class="btn btn-outline-secondary btn-lg px-4 animate__animated animate__pulse">Secondary</button>
             </div>
           </div>
         </div>
